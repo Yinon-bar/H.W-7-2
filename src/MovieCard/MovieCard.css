@@ -1,10 +1,9 @@
-.UserSingle {
+.MovieCard {
   border: 1px solid #fff;
   border-radius: 0.5rem;
   width: 24%;
   margin: 0.5rem 0rem;
-  padding: 1rem;
-  height: 12rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,25 +12,37 @@
   /* background-color: #fff; */
 }
 
-.UserSingle button {
+.MovieCard .img {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.MovieCard button {
   margin: 0.5rem;
 }
 
-.UserSingle ul li {
+.MovieCard ul li {
   margin: 0.5rem;
   list-style-type: none;
   text-align: center;
 }
 
-.UserSingle.active {
-  height: 400px;
+.MovieCard.active {
+  height: 600px;
   background-color: #333;
   transition: 0.4s ease-in-out;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.UserSingle.notActive {
-  height: 12rem;
+.MovieCard.active p {
+  padding: 0.3rem 0.65rem;
+}
+
+.MovieCard.active .img {
+  display: none;
+}
+
+.MovieCard.notActive {
+  height: 27rem;
   transition: 0.4s ease-in-out;
 }

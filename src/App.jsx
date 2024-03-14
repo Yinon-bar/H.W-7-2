@@ -1,11 +1,11 @@
 import "./App.css";
-import UsersList from "./Users/UsersList";
+import MoviesList from "./MoviesList/MoviesList";
 
 function App() {
   return (
     <>
-      <h1>User List</h1>
-      <UsersList />
+      <h1>Movies App</h1>
+      <MoviesList />
     </>
   );
 }
